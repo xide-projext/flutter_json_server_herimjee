@@ -8,7 +8,7 @@ void main() async {
   try{
     var response = await get(Uri.http("localhost:3000", jsonUrl));
     print(response.body);
-    toons = json.decode(response.body)['webtoon'];
+    toons = json.decode(response.body);
   }catch(e){
     print(e);
   }
